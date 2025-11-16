@@ -1,0 +1,265 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ 
+}
+
+
+/*HEADER*/
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #963661;
+  width: 100%;
+  margin: 0 auto;
+  align-items: center;
+  height: 120px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 500;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  margin-left: 40px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-right: 40px;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 8px 15px;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #6a5acd;
+  background-color: #ECCCEB;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  color: black;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.fot-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.columm h2 {
+  margin-bottom: 10px;
+  font-size: 25px;
+}
+
+.columm ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columm ul li {
+  margin-bottom: 8px;
+}
+
+.columm ul li a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.columm ul li a:hover {
+  color: #d81f7f;
+}
+
+.copy {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: black;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: black;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #d81f7f;
+  /* mismo rosa elegante del hover */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 820px) {
+  .logo {
+    display: none;
+    /* 🔹 Oculta el header en móviles */
+  }
+
+  li{
+    display: none;
+  }
+  
+
+  /* Botón hamburguesa */
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 600;
+    transition: color 0.3s ease;
+  }
+
+  .menu-toggle.active {
+    color: #ffffff;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    display: block;
+    width: 0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    padding-top: 3rem;
+    background-color: #963661;
+    overflow-x: hidden;
+    transition: width 0.3s ease;
+  }
+
+  .sidebar.open {
+    width: 14rem;
+  }
+
+  .sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s;
+    margin-top: 40px;
+  }
+
+  .sidebar nav a span {
+    display: none;
+  }
+
+  .sidebar.open nav a span {
+    display: inline;
+  }
+
+  .sidebar .img {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .selected{
+border: 3px solid white;
+  
+  }
+}
+
+/* --- MENU TOGGLE escondido en pantallas grandes --- */
+@media (min-width: 821px) {
+  .menu-toggle {
+    display: none;
+    /* 🔹 Oculta el menú hamburguesa */
+  }
+
+  .sidebar {
+    display: none;
+    /* 🔹 También puedes ocultar el sidebar en escritorio */
+  }
+}
+
+/* Tablets y móviles */
+@media (max-width: 820px) {
+  header {
+    height: 80px; /* antes era 120px */
+    padding: 0 15px; /* opcional, para que no quede tan grande el espacio lateral */
+  }
+
+  .logo {
+    width: 70px;  /* reducir tamaño del logo */
+    height: 70px; /* reducir altura del logo */
+  }
+
+  body {
+    padding-top: 90px; /* para que el contenido no quede debajo del header reducido */
+  }
+}
+
+@media (max-width: 820px) {
+  .footer {
+    display: none;   /* 🔥 Oculta completamente el footer */
+  }
+}
+
