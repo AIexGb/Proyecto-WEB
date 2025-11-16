@@ -3,5 +3,5 @@ const sidebar = document.getElementById('sidebar');
 
 menuToggle.addEventListener('click', () => {
   sidebar.classList.toggle('open');
-  menuToggle.classList.toggle('active'); // <-- cambia el color del icono
+  menuToggle.classList.toggle('active'); //cambia el color del icono
 }); 

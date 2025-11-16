@@ -387,7 +387,7 @@
         white-space: nowrap;
     }
 
-    .tab .tab-full { display: none; } /* mostrar abreviaturas en móvil */
+    .tab .tab-full { display: none; }
     .tab .tab-short { display: inline; }
 }
 
