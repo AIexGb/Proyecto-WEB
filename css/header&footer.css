@@ -30,6 +30,11 @@ header {
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   align-items: center;
   margin-left: 40px;
+  object-fit: contain;
+}
+
+.logo img{  
+  width: 100%;
 }
 
 nav ul {
