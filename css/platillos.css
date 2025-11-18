@@ -322,6 +322,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s;
+  margin-left: 80px;
 }
 
 #btnAgreg:hover {
