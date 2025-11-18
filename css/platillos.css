@@ -646,7 +646,7 @@
     gap: 6px;
 }
 
-/* Estilo del botón cuadrado */
+
 .btn-x {
     width: 28px;
     height: 28px;
@@ -655,10 +655,11 @@
     color: white;
     font-weight: bold;
     cursor: pointer;
-    border-radius: 4px; /* Cuadrado con esquinas suaves */
+    border-radius: 4px; 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -15px;
 }
 
 .btn-x:hover {
