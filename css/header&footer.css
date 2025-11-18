@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
- 
+  font-size: large;
 }
 
 
@@ -59,28 +59,6 @@ nav ul li a:hover {
   background-color: #ECCCEB;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* FOOTER */
 .footer {
   margin-top: 60px;
@@ -93,7 +71,8 @@ nav ul li a:hover {
 .fot-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
