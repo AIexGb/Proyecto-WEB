@@ -3,9 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: large;
+  font-size: 21px;
 }
 
+/* AGREGAR ESTO AL BODY */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
 
 /*HEADER*/
 header {
@@ -59,9 +65,15 @@ nav ul li a:hover {
   background-color: #ECCCEB;
 }
 
-/* FOOTER */
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 120px; 
+}
+
 .footer {
-  margin-top: 60px;
+  margin-top: auto; /* empuja el footer hacia abajo */
   color: black;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   padding: 40px 20px 20px;
@@ -124,28 +136,26 @@ nav ul li a:hover {
 
 .social-icons a:hover {
   color: #d81f7f;
-  /* mismo rosa elegante del hover */
 }
 
-
-
-
-
-
-
-
+/* Tablets y móviles */
 @media (max-width: 820px) {
+  body {
+    padding-top: 0; 
+  }
+  
+  .main-content {
+    margin-top: 80px; 
+  }
+
   .logo {
     display: none;
-    /* 🔹 Oculta el header en móviles */
   }
 
   li{
     display: none;
   }
   
-
-  /* Botón hamburguesa */
   .menu-toggle {
     display: block;
     position: fixed;
@@ -162,7 +172,6 @@ nav ul li a:hover {
     color: #ffffff;
   }
 
-  /* Sidebar */
   .sidebar {
     display: block;
     width: 0;
@@ -206,44 +215,26 @@ nav ul li a:hover {
   }
 
   .selected{
-border: 3px solid white;
-  
+    border: 3px solid white;
+  }
+
+  header {
+    height: 80px;
+    padding: 0 15px;
+  }
+
+  .footer {
+    display: none;   
   }
 }
 
-/* --- MENU TOGGLE escondido en pantallas grandes --- */
+
 @media (min-width: 821px) {
   .menu-toggle {
     display: none;
-    /* 🔹 Oculta el menú hamburguesa */
   }
 
   .sidebar {
     display: none;
-    /* 🔹 También puedes ocultar el sidebar en escritorio */
   }
 }
-
-/* Tablets y móviles */
-@media (max-width: 820px) {
-  header {
-    height: 80px; /* antes era 120px */
-    padding: 0 15px; /* opcional, para que no quede tan grande el espacio lateral */
-  }
-
-  .logo {
-    width: 70px;  /* reducir tamaño del logo */
-    height: 70px; /* reducir altura del logo */
-  }
-
-  body {
-    padding-top: 90px; /* para que el contenido no quede debajo del header reducido */
-  }
-}
-
-@media (max-width: 820px) {
-  .footer {
-    display: none;   /* 🔥 Oculta completamente el footer */
-  }
-}
-

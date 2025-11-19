@@ -2,6 +2,10 @@ body {
   background: #f9f9f9;
 }
 
+*{ 
+font-size: 21px; 
+}
+
 .contenedor-general {
   margin-top: 130px;
   display: flex;
