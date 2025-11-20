@@ -6,4 +6,9 @@ menuToggle.addEventListener("click", () => {
   menuToggle.classList.toggle("active"); //cambia el color del icono
 });
 
+if (location.pathname.endsWith('/')) {
+    history.replaceState({}, '', location.pathname.slice(0, -1)); //quita el ultimo (/)
+}
+
+
 //comentario
