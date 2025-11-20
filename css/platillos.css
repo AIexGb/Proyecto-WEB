@@ -116,7 +116,8 @@
     background: var(--secondary);
     color: var(--white);
     border: none;
-    padding: 10px 18px;
+    padding: 14px 24px; 
+    font-size: 22px;
     margin: 0 5px;
     border-radius: 25px;
     font-weight: 600;
@@ -636,12 +637,16 @@
     .actions {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 15px;
     }
 
-    .actions button {
-        padding: 8px 14px; 
-        font-size: 19px;
+.actions button {
+        /* Aumentamos el relleno vertical y horizontal */
+        padding: 12px 22px; 
+        /* Aumentamos el tamaño de la fuente */
+        font-size: 22px;
+        /* Quitamos el margin: 0 5px que pueden causar problemas de alineación en esta vista */
+        margin: 0; 
     }
 
     .info2{
