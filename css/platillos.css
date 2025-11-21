@@ -714,3 +714,9 @@ input[type="text"] {
     flex-direction: column;
   }
 }
+
+@media (max-width: 820px) {
+  .actions button {
+    font-size: 25px;
+  }
+}
