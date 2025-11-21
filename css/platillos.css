@@ -17,7 +17,7 @@
 
  main {
     max-width: 1200px;
-    margin: 130px auto 0px auto;
+    margin: 40px auto 0px auto;
     gap: 20px;
  }
 
@@ -343,7 +343,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .tabs { 
         gap: 8px; 
         padding: 8px 12px; 
@@ -375,7 +375,7 @@
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     main{
         margin-top: 0px;
     }
@@ -406,7 +406,7 @@
     .tabs::-webkit-scrollbar-thumb { background: rgba(128,43,74,0.12); border-radius: 6px; }
 
     .tab {
-        height: 100px;
+        height: 70px;
         min-width: 56px; 
         padding: 6px 10px;
         display: flex;
@@ -436,11 +436,17 @@
         font-size: 13px;
     }
 
+    .btnAgreg{
+        padding: 10px 18px;
+        font-size: 17px;
+        gap: 10px;
+    }
+
     /* Asegurar espacio en contenido para barra fija */
     main, .content { padding-bottom: 140px; }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     main {
         display: flex;
         flex-direction: column;
@@ -513,7 +519,7 @@
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 920px) {
     .plates .plate {
         background: white;
         color: var(--secondary);
@@ -543,12 +549,6 @@
         box-shadow: none;
         transform: none;
     }
-
-    #btnAgreg {
-    padding: 5px 10px;
-    font-size: 12px;
-    gap: 10px;
-  }
 }
 
 
@@ -624,7 +624,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 920px) and (max-width: 1023px) {
     .info-mobile {
         display: flex;
         flex-direction: column;
@@ -654,7 +654,7 @@
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 920px) {
     main .info {
         display: none !important; /* ocultar versión normal */
     }
