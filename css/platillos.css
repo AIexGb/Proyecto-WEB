@@ -95,7 +95,7 @@
  }
 
  .info {
-    text-align: right;
+    text-align: left;
     margin-bottom: 20px;
  }
 
@@ -135,7 +135,7 @@
 
  .search-section {
     max-width: 1200px;
-    margin: 50px 30%;
+    margin: 50px;
     background: var(--panel);
     padding: 20px;
     border-radius: 12px;
@@ -150,7 +150,7 @@
 
  .plates {
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
@@ -381,7 +381,7 @@
     }
 
     .plates{
-        margin-bottom: 80px;
+        margin-bottom: 120px;
     }
 
     .search-section{
@@ -470,7 +470,6 @@
 
     .search-section {
         width: 100%;
-        order: 3;
     }
 
     .plates {
