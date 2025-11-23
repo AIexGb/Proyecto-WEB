@@ -112,7 +112,7 @@ input[type="text"] {
   align-items: center;
   gap: 12px;
   width: 100%;
-  justify-content: flex-end;
+  justify-content: space-around;
 }
 
 .actions button {
@@ -128,10 +128,9 @@ input[type="text"] {
   transition: 0.3s;
 }
 
-.actions button:first-child {
+/*.actions button:first-child {
   margin-right: 175px;
-}
-
+}*/
 .actions button:hover {
   background: var(--primary);
 }
@@ -643,17 +642,5 @@ input[type="text"] {
 
   .actions button {
     font-size: 23px;
-  }
-}
-
-@media (max-width: 655px) {
-  .actions button:first-child {
-    margin-right: auto;
-  }
-}
-
-@media (max-width: 480px) {
-  .actions {
-    justify-content: space-around;
   }
 }
