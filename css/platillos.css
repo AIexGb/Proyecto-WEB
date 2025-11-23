@@ -420,7 +420,7 @@ input[type="text"] {
     padding: 8px 10px;
     justify-content: center;
     align-items: center;
-    background: var(--panel);
+    background: #8d6e97;
     border: 1px solid rgba(75, 23, 42, 0.12);
     z-index: 160;
     flex-wrap: nowrap;
@@ -456,6 +456,7 @@ input[type="text"] {
   }
 
   .tab .tab-short {
+    color: #4f3e56;
     display: inline;
   }
 
@@ -577,7 +578,7 @@ input[type="text"] {
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 999px;
-  background: rgba(58, 46, 61, 0.05);
+  background: #e6d8e8;
   color: var(--text);
   font-weight: 600;
   text-align: center;
