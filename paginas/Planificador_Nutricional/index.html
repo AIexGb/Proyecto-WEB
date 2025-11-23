@@ -162,17 +162,40 @@
             <div class="fondo-card">
                 <div class="resultados">
                     <h2>Resultados</h2>
-                    <div class="textoo">
+
+                    <!-- Esto es lo que se ve al inicio -->
+                    <div class="textoo" id="texto-inicial">
                         <p>Presione "Enviar" para obtener resultados</p>
                     </div>
-                    <div style="display: flex; justify-content: center;">
+
+                    <div style="display: flex; justify-content: center;" id="btn-container">
                         <form action="/paginas/Seleccion_de_platillos/">
-                        <br>
-                        <button type="submit" class="btn">Siguiente</button>
+                            <br>
+                            <button type="submit" class="btn" id="btn-siguiente" disabled>Siguiente</button>
                         </form>
                     </div>
 
+
+                    <!-- Esto aparece solo después de enviar -->
+                    <div class="textoo" id="contenedor-resultados" style="display:none;">
+                        <div class="form-group">
+                            <label>Tasa Metabólica Basal (TMB):</label>
+                            <input type="text" id="tmb" readonly placeholder="—">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Calorías con Actividad Física:</label>
+                            <input type="text" id="caloriasActividad" readonly placeholder="—">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Calorías Recomendadas Según Objetivo:</label>
+                            <input type="text" id="caloriasObjetivo" readonly placeholder="—">
+                        </div>
+                    </div>
+
                 </div>
+
             </div>
         </div>
 
