@@ -69,9 +69,9 @@ input[type="text"] {
 
 .tab {
   background: var(--secondary);
-  color: var(--white);
+  color: var(--light);
   border-radius: 20px;
-  border: 1px solid var(--secondary);
+  border: 2px solid var(--secondary);
   padding: 8px 16px;
   font-weight: 600;
 }
@@ -112,6 +112,7 @@ input[type="text"] {
   align-items: center;
   gap: 12px;
   width: 100%;
+  justify-content: flex-end;
 }
 
 .actions button {
@@ -128,7 +129,7 @@ input[type="text"] {
 }
 
 .actions button:first-child {
-  margin-right: auto;
+  margin-right: 175px;
 }
 
 .actions button:hover {
@@ -470,7 +471,7 @@ input[type="text"] {
 
   .actions {
     gap: 10px;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
 
   .actions button {
@@ -484,6 +485,10 @@ input[type="text"] {
     border: 2px solid var(--secondary);
     box-shadow: 0 10px 24px rgba(128, 43, 74, 0.06);
   }
+}
+
+#btnGuardar {
+  margin-right: 75px;
 }
 
 @media (max-width: 480px) {
@@ -578,7 +583,7 @@ input[type="text"] {
   overflow: hidden;
   text-overflow: ellipsis;
   border-radius: 999px;
-  background: #e6d8e8;
+  background: var(--light);
   color: var(--text);
   font-weight: 600;
   text-align: center;
@@ -638,5 +643,17 @@ input[type="text"] {
 
   .actions button {
     font-size: 23px;
+  }
+}
+
+@media (max-width: 655px) {
+  .actions button:first-child {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .actions {
+    justify-content: space-around;
   }
 }
