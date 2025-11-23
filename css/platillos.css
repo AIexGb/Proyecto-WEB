@@ -70,6 +70,7 @@ input[type="text"] {
   background: var(--secondary);
   color: var(--white);
   border-radius: 20px;
+  border: 1px solid var(--secondary); 
   padding: 8px 16px;
   font-weight: 600;
 }
@@ -419,10 +420,11 @@ input[type="text"] {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 999px;
+    border-radius: 9px;
     background: rgba(58, 46, 61, 0.05);
     color: var(--text);
     white-space: nowrap;
+    
   }
 
   .tab .tab-full {
