@@ -650,21 +650,8 @@ input[type="text"] {
   background-color: var(--light);
   padding: 12px 15px;
   border-radius: 8px;
-  font-size: 0.75rem; /* más pequeña */
-  font-weight: 700; /* negrita */
+  font-size: 0.75rem; 
+  font-weight: 700; 
   color: var(--text);
 }
 
-/* Para pantallas menores a 768px */
-@media (max-width: 768px) {
-  .nota::before {
-    content: attr(data-text-mobile);
-  }
-  .nota {
-    color: var(--text); /* mantiene el estilo */
-  }
-  /* Ocultar el texto original dentro del div */
-  .nota {
-    font-size: 0; 
-  }
-}
